@@ -1,0 +1,10 @@
+<h1>Enter Index</h1>
+
+<%= form_with url: '/apicall', method: :get, local: false do |f| %>
+  <%= f.text_field(:search) %>
+  <%= f.submit("Search") %>
+<% end %>
+
+<br><br>
+
+<div id="search-results-append"></div>

@@ -1,0 +1,17 @@
+
+<table>
+  <tr>
+    <th>FIPS</th>
+    <th>State</th>
+    <th>County</th>
+    <th>Population</th>
+  </tr>
+  <% @results.each do |result| %>
+  <tr>
+    <th><%= result["FIPS"] %></th>
+    <th><%= result["STNAME"] %></th>
+    <th><%= result["CTYNAME"] %></th>
+    <th><%= result["randPop"] %></th>
+  </tr>
+  <% end %>
+</table> 
